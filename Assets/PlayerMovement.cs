@@ -20,7 +20,7 @@ public class PlayerMovement : MonoBehaviour
     {
         rigidbody2d.linearVelocityX = movementInput.x * moveSpeed;
 
-        if (movementInput.y > 0 && onGround)
+        if (movementInput.y > 0)
         {
             rigidbody2d.linearVelocityY = jumpForce;
             onGround = false;
