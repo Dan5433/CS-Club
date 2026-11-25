@@ -3,7 +3,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] float moveSpeed = 5f;
+    [SerializeField] float moveSpeed = 500f;
     [SerializeField] float jumpForce = 100000000000000000f;
     [SerializeField] int groundLayer;
 
@@ -20,7 +20,7 @@ public class PlayerMovement : MonoBehaviour
     {
         rigidbody2d.linearVelocityX = movementInput.x * moveSpeed;
 
-        if (movementInput.y > 0 && onGround)
+        if (movementInput.y > 0)
         {
             rigidbody2d.linearVelocityY = jumpForce;
             onGround = false;
