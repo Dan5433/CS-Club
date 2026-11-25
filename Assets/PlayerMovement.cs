@@ -3,7 +3,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] float moveSpeed = 5f;
+    [SerializeField] float moveSpeed = 500f;
     [SerializeField] float jumpForce = 100000000000000000f;
     [SerializeField] int groundLayer;
 
